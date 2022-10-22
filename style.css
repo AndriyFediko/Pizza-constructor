@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+}
+.navbarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbarHeader{
+    background-color: rgb(255, 145, 0);
+    padding: 10px 33px;
+    color: #fff;
+    border-radius: 10px;
+}
+.ingradientContainer{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    margin-top: 10px;
+}
+.category{
+    border-bottom: 2px dotted rgb(255, 145, 0);
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.categoryInner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 20px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.pic{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 3px #999;
+    border-radius: 5px;
+    background-size: cover;
+    cursor: pointer;
+}
+.ingradient{
+    font-size: calc(5px + 0.5vw);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chooseIngragientTitle{
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+}
+.feta{
+    background-image: url(./img/feta.png);
+}
+.blue{
+    background-image: url(./img/blu.png);
+}
+.parm{
+    background-image: url(./img/parmezan.png);
+}
+.cheder{
+    background-image: url(./img/cheder.png);
+}
+.mozarella{
+    background-image: url(./img/motza.png);
+}
+.categoryInner .row:nth-child(2){
+    margin-top: 10px;
+}
+.ingradient div:last-child{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.chicken{
+    background-image: url(./img/chicken.png);
+}
+.becon{
+    background-image: url(./img/bekon.png);
+}
+.shunka{
+    background-image: url(./img/shunka.png);
+}
+.paperony{
+    background-image: url(./img/paparoni.png);
+}
+.alfredo{
+    background-image: url(./img/alfredo.png);
+}
+.barbeky{
+    background-image: url(./img/barbequ.png);
+}
+.garlick{
+    background-image: url(./img/chasnyk.png);
+}
+.corn{
+    background-image: url(./img/kukurudza.png);
+}
+.pineapple{
+    background-image: url(./img/ananas.png);
+}
+.tomato{
+    background-image: url(./img/tomato.png);
+}
+.mushrooms{
+    background-image: url(./img/grub.png);
+}
+.shpunat{
+    background-image: url(./img/shpunat.png);
+}
+.perets{
+    background-image: url(./img/perets.png);
+}
+.pizzaContainer{
+    width: 550px;
+    height: 550px;
+    background-image: url(./img/bace.png);
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    flex-wrap: wrap;
+}
+.pizzaInnerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.picInPizza{
+    margin: 3px;
+}
+.payBtn{
+    padding: 15px 30px;
+    background-color: rgb(39, 168, 0);
+    border: none;   
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 170px;
+    box-shadow: 0 4px 15px #1f1f1f;
+    position: relative;
+}
+.payBtn__active{
+    animation: btnMove 3s infinite; 
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+@keyframes btnMove{
+    0%{}
+    20%{
+        bottom: 0px;
+        box-shadow: 0 4px 15px #1f1f1f;
+    }
+    25%{
+        bottom: 5px;
+        box-shadow: 0 4px 20px #1f1f1f;
+    }
+    30%{
+        bottom: 0px;
+        box-shadow: 0 4px 15px #1f1f1f;
+    }
+    35%{
+        bottom: 5px;
+        box-shadow: 0 4px 20px #1f1f1f;
+    }
+    40%{
+        bottom: 0px;
+        box-shadow: 0 4px 15px #1f1f1f;
+    }
+    60%{}
+    65%{
+        bottom: 0px;
+        box-shadow: 0 4px 15px #1f1f1f;
+    }
+    70%{
+        bottom: 5px;
+        box-shadow: 0 4px 20px #1f1f1f;
+    }
+    75%{
+        bottom: 0px;
+        box-shadow: 0 4px 15px #1f1f1f;
+    }
+    80%{
+        bottom: 5px;
+        box-shadow: 0 4px 20px #1f1f1f;
+    }
+    85%{
+        bottom: 0px;
+        box-shadow: 0 4px 15px #1f1f1f;
+    }
+    100%{}
+}
+@media screen and (max-width:1100px){
+    .pizzaContainer{
+        width: 370px;
+        height: 370px;
+    }
+}
+@media screen and (max-width:900px){
+    .wrap{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width:425px){
+    .pizzaContainer{
+        width: 280px;
+        height: 280px;
+        padding: 0 20px;
+        margin: 50px 0;
+    }
+}

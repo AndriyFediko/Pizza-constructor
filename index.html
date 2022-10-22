@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza constructor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/favicon-32x32.png">
+</head>
+<body>
+    <div class="wrap">
+        <div class="navbarContainer">
+            <div class="navbarHeader">Pizza constructor</div>
+            <div class="chooseIngragientTitle">Оберіть Інградієнти</div>
+            <div class="ingradientContainer">
+                <div class="category cheese" id="cheese">Сир</div>
+                <div class="categoryInner" id="cheeseOpen">
+                    <div class="row">
+                        <div class="ingradient" id="fetaIngradient">
+                            <div class="pic feta" id="feta"></div>
+                            <div>Фета</div>
+                        </div>
+                        <div class="ingradient" id="blueIngradient">
+                            <div class="pic blue" id="blue"></div>
+                            <div>Бергадер</div>
+                        </div>
+                        <div class="ingradient" id="parmIngradient">
+                            <div class="pic parm" id="parm"></div>
+                            <div>Пармезан</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ingradient" id="chederIngradient">
+                            <div class="pic cheder" id="cheder"></div>
+                            <div>Чедер</div>
+                        </div>
+                        <div class="ingradient" id="mozarellaIngradient">
+                            <div class="pic mozarella" id="mozarella"></div>
+                            <div>Моцарелла</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category meat" id="meat">М'ясо</div>
+                <div class="categoryInner" id="meatOpen">
+                    <div class="row">
+                        <div class="ingradient" id="chickenIngradient">
+                            <div class="pic chicken" id="chicken"></div>
+                            <div>Курка</div>
+                        </div>
+                        <div class="ingradient" id="beconIngradient">
+                            <div class="pic becon" id="becon"></div>
+                            <div>Бекон</div>
+                        </div>
+                        <div class="ingradient" id="shunkaIngradient">
+                            <div class="pic shunka" id="shunka"></div>
+                            <div>Шинка</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ingradient" id="paperonyIngradient">
+                            <div class="pic paperony" id="paperony"></div>
+                            <div>Папероні</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category souses" id="souses">Соуси</div>
+                <div class="categoryInner" id="sousesOpen">
+                    <div class="row">
+                        <div class="ingradient" id="alfredoIngradient">
+                            <div class="pic alfredo" id="alfredo"></div>
+                            <div>Альфредо</div>
+                        </div>
+                        <div class="ingradient" id="barbekyIngradient">
+                            <div class="pic barbeky" id="barbeky"></div>
+                            <div>Барбекю</div>
+                        </div>
+                        <div class="ingradient" id="garlickIngradient">
+                            <div class="pic garlick" id="garlick"></div>
+                            <div>Часниковий</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category vegitables" id="vegitables">Овочі</div>
+                <div class="categoryInner" id="vegitablesOpen">
+                    <div class="row">
+                        <div class="ingradient" id="cornIngradient">
+                            <div class="pic corn" id="corn"></div>
+                            <div>Кукурудза</div>
+                        </div>
+                        <div class="ingradient" id="pineappleIngradient">
+                            <div class="pic pineapple" id="pineapple"></div>
+                            <div>Анаанс</div>
+                        </div>
+                        <div class="ingradient" id="tomatoIngradient">
+                            <div class="pic tomato" id="tomato"></div>
+                            <div>Помідор</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ingradient" id="mushroomsIngradient">
+                            <div class="pic mushrooms" id="mushrooms"></div>
+                            <div>Гриби</div>
+                        </div>
+                        <div class="ingradient" id="shpunatIngradient">
+                            <div class="pic shpunat" id="shpunat"></div>
+                            <div>Шпинат</div>
+                        </div>
+                        <div class="ingradient" id="peretsIngradient">
+                            <div class="pic perets" id="perets"></div>
+                            <div>Перець</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category moreOptions" id="moreOptions">Додаткові опції</div>
+                <div class="categoryInner" id="moreOptionsOpen">
+                    <div class="row">
+                        <div class="ingradient">
+                            <div class="pic corn" id="corn"></div>
+                            <div>Кукурудза</div>
+                        </div>
+                        <div class="ingradient">
+                            <div class="pic pineapple" id="pineapple"></div>
+                            <div>Анаанс</div>
+                        </div>
+                        <div class="ingradient">
+                            <div class="pic tomato" id="tomato"></div>
+                            <div>Помідор</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pizzaContainer">
+            <div class="pizzaInnerContainer">
+                <div class="pic picInPizza feta" id="fetaInPizza"></div>
+                <div class="pic picInPizza blue" id="blueInPizza"></div>
+                <div class="pic picInPizza parm" id="parmInPizza"></div>
+                <div class="pic picInPizza cheder" id="chederInPizza"></div>
+                <div class="pic picInPizza mozarella" id="mozarellaInPizza"></div>
+                <div class="pic picInPizza chicken" id="chickenInPizza"></div>
+                <div class="pic picInPizza becon" id="beconInPizza"></div>
+                <div class="pic picInPizza shunka" id="shunkaInPizza"></div>
+                <div class="pic picInPizza paperony" id="paperonyInPizza"></div>
+                <div class="pic picInPizza alfredo" id="alfredoInPizza"></div>
+                <div class="pic picInPizza barbeky" id="barbekyInPizza"></div>
+                <div class="pic picInPizza garlick" id="garlickInPizza"></div>
+                <div class="pic picInPizza corn" id="cornInPizza"></div>
+                <div class="pic picInPizza pineapple" id="pineappleInPizza"></div>
+                <div class="pic picInPizza tomato" id="tomatoInPizza"></div>
+                <div class="pic picInPizza mushrooms" id="mushroomsInPizza"></div>
+                <div class="pic picInPizza shpunat" id="shpunatInPizza"></div>
+                <div class="pic picInPizza perets" id="peretsInPizza"></div>
+            </div>
+        </div>
+        <div class="orderContainer">
+            <button class="payBtn" id="payBtn">Оплатити 0грн</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
